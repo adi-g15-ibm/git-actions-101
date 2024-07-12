@@ -1,0 +1,10 @@
+on:
+  push:
+
+jobs:
+  justrun:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "The workflow files specified till now are:"
+      - run: ls .github/workflows

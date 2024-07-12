@@ -1,0 +1,9 @@
+on:
+  schedule:
+    - cron: */10 * * * * # Runs every 5 minutes
+
+jobs:
+  cronjob:
+    runs-on: ubuntu-latest
+    steps:
+      - run: time
